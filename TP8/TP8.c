@@ -8,6 +8,12 @@
 #define PATH    "./plugins/"
 #define EXT     ".so"
 
+typedef struct{
+    char * name;
+    char sym;
+    int nb_args;
+}Function;
+
 static int sel_lib(const struct dirent *file){
     /*
     prends un direct en parametre, retourne 1 si l'extension du fichier
@@ -28,6 +34,7 @@ static int sel_lib(const struct dirent *file){
 }
 
 int main(int argc, char * argv[]){
+    Function * func_tab;
     struct dirent ** namelist;
     int n;
     int i;
