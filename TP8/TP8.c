@@ -7,7 +7,6 @@
 #define PATH    "./plugins/"
 #define EXT     ".so"
 
-
 static int sel_lib(const struct dirent *file){
     /*
     prends un direct en parametre, retourne 1 si l'extension du fichier
