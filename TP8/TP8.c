@@ -1,5 +1,6 @@
 #define _DEFAULT_SOURCE
 #include <dirent.h>
+#include <dlfcn.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
